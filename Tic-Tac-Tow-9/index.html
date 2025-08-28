@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="msg-container hide">
+        <p id="msg">Winner</p>
+        <button id="new-btn" aria-label="Start a new game">New Game</button>
+    </div>
+    <main>
+        <h1>Tic Tac Toe</h1>
+        <div class="score-board">
+            <span id="score-x">X: 0</span>
+            <span id="score-o">O: 0</span>
+        </div>
+        <div class="turn-indicator" id="turn-indicator">Turn: O</div>
+        <div class="container">
+            <div class="game">
+                <button class="box" aria-label="Tic Tac Toe cell 1"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 2"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 3"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 4"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 5"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 6"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 7"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 8"></button>
+                <button class="box" aria-label="Tic Tac Toe cell 9"></button>
+            </div>
+        </div>
+        <button id="reset-btn" aria-label="Reset the game">Reset Game</button>
+    </main>
+    <audio id="move-sound" src="https://www.soundjay.com/buttons/beep-01a.mp3"></audio>
+    <audio id="win-sound" src="https://www.soundjay.com/buttons/beep-02.mp3"></audio>
+    <script src="game.js"></script>
+</body>
+</html>
